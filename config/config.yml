@@ -1,0 +1,17 @@
+default: &default
+  base_url: http://localhost:3000
+
+  geocoding:
+    maxmind_geolite2_file: ./GeoLite2-City.mmdb
+
+  mailer:
+    default_from: "from@example.com"
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default

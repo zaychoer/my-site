@@ -1,0 +1,61 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   "true": "foo"
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  users:
+    auth:
+      login_required: "You have to log in to access this resource"
+      already_logged_in: "You are already logged in"
+
+    sessions:
+      invalid_credentials: "Invalid email or password"
+      logged_out: "You are now logged-out"
+
+    email_confirmations:
+      email_not_confirmed: "You have to confirm your email address"
+      email_confirmed: "Your email address is now confirmed"
+      link_invalid_or_expired: "Email confirmation link is invalid or expired"
+      link_sent: "Email confirmation link has been sent to your address"
+
+    password_resets:
+      password_was_reset: "Your password has been changed. You can now log in."
+      invalid_or_expired_link: "Password reset link is invalid or expired"
+
+    user:
+      updated: "Your account information was updated"
+
+  user_mailer:
+    email_confirmation:
+      subject: "Confirm your email"
+    forgot_password:
+      subject: "Reset your password"
+    password_changed:
+      subject: "Your password was changed"
